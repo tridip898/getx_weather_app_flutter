@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:getx_weather_app/views/home_screen.dart';
 import 'package:sizer/sizer.dart';
 import 'package:get/get.dart';
 
@@ -12,14 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Sizer(
-      builder: (context,orientation,deviceType){
+      builder: (context, orientation, deviceType) {
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
           initialRoute: '/',
-          getPages: [
-            GetPage(name: '/', page: ()=>)
-          ],
-        )
+          getPages: [GetPage(name: '/', page: () => HomeScreen())],
+        );
       },
     );
   }

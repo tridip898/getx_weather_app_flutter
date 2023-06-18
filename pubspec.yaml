@@ -38,6 +38,9 @@ dependencies:
   get: ^4.6.5
   sizer: ^2.0.15
   http: ^1.0.0
+  geolocator: ^9.0.2
+  geocoding: ^2.1.0
+  intl: ^0.18.0
 
 dev_dependencies:
   flutter_test:
